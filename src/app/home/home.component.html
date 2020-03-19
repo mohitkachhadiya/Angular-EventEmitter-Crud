@@ -1,0 +1,74 @@
+
+
+
+
+<form class="formone">
+	<div>
+		<label>FirstName : </label>
+		<input class="form-control inputtext" type="text" name="firstName" [(ngModel)]="dataArr.firstName" placeholder="Enter FirstName">
+	</div>
+
+	<div>
+		<label>LastName : </label>
+		<input class="form-control inputtext" type="text" name="lastName" [(ngModel)]="dataArr.lastName" placeholder="Enter LastName">
+	</div>
+
+	<div>
+		<label>Mobile No : </label>
+		<input class="form-control inputtext" type="number" name="mobileNo" [(ngModel)]="dataArr.mobileNo" placeholder="Enter Mobile number">
+	</div>
+	
+	<div>
+		<label>Email : </label>
+		<input class="form-control inputtext" type="text" name="email" [(ngModel)]="dataArr.email" placeholder="Enter Email">
+	</div>
+
+	<button class="submit btn btn-primary" type="submit" (click) = "onSubmit()" submitted>submit</button>
+</form>
+
+
+<!-- <form class="formtwo">
+	<div>
+		<label>FirstName : </label>
+		<input class="form-control inputtextone" type="text" formControlName="firstname" placeholder="Enter FirstName" id="val">
+	</div>
+
+	<div>
+		<label>LastName : </label>
+		<input class="form-control inputtextone" type="text" formControlName="lastname" placeholder="Enter LastName" id="val">
+	</div>
+
+	<div>
+		<label>Email : </label>
+		<input class="form-control inputtextone" type="text" formControlName="email" placeholder="Enter Email" id="val">
+	</div>
+
+	<div>
+		<label>Mobile No : </label>
+		<input class="form-control inputtextone" type="number" formControlName="mobile" placeholder="Enter Mobile number" id="val">
+	</div>
+</form>
+-->
+<form class="formtwo">
+	<table>
+		<thead>
+			<tr>
+				<th>FirstName</th>
+				<th>LastName</th>
+				<th>Email</th>
+				<th>Mobile No.</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor = "let data of values">
+				<td>{{data.firstName}}</td>
+				<td>{{data.lastName}}</td>
+				<td>{{data.email}}</td>
+				<td>{{data.mobileNo}}</td>
+			</tr>
+		</tbody>
+	</table>
+</form>
+
+
+

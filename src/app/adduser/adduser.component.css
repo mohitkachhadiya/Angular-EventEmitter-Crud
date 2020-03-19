@@ -1,0 +1,17 @@
+.formone {
+	margin-left: 40%;
+	margin-top: 2%;
+}
+.inputtext {
+	width: 35%;
+}
+.submit {
+	width: 100px;
+	margin-left: 33%;
+}
+.edit{
+	margin-left: 50%;
+}
+label, button{
+	margin-top: 15px;
+}

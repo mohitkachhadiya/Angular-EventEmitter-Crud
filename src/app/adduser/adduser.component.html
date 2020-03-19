@@ -1,0 +1,32 @@
+
+
+<form class="formone" >
+	<div>
+		<label>Student Name : </label>
+		<input class="form-control inputtext" type="text" name="studentName" [(ngModel)]="students.studentName" placeholder="Enter StudentName">
+	</div>
+
+	<div>
+		<label>Student Surname : </label>
+		<input class="form-control inputtext" type="text" name="studentSurname" [(ngModel)]="students.studentSurname" placeholder="Enter Student Surname">
+	</div>
+
+	<div>
+		<label>Student Division : </label>
+		<input class="form-control inputtext" type="text" name="studentDivision" [(ngModel)]="students.studentDivision" placeholder="Enter Student Division">
+	</div>
+
+	<div>
+		<label>Student Roll No : </label>
+		<input class="form-control inputtext" type="number" name="studentRollno" [(ngModel)]="students.studentRollno" placeholder="Enter Student Rollno">
+	</div>
+
+	<div>
+		<label>Student Grade : </label>
+		<input class="form-control inputtext" type="text" name="studentGrade" [(ngModel)]="students.studentGrade" placeholder="Enter Student Grade">
+	</div>
+
+<button class="edit btn btn-primary" *ngIf="!isEdit" (click) = "onEdit()"> Edit</button>
+<button class="submit btn btn-primary" *ngIf="isUser" type="submit" (click) = "onSubmit()">Add User</button>	
+</form>
+

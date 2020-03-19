@@ -1,0 +1,35 @@
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<input class="col mb-0 mt-2 custom-input" placeholder="search name" id="nameSearch" (keyup)="searchByName(fromSearchedItems)" type="text">
+		</div>
+	</div>
+	<div class="row mt-5">
+		<div class="col-xl-12 ">
+			<h4 class="text-center pb-3">Form</h4>
+			<hr>
+			<table class="m-auto">
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Mobile No</th>
+					<th>E-mail</th>
+					<th>User Edit</th>
+					<th>User Delete</th>
+				</tr>
+				<tbody *ngIf="allData">
+					<tr *ngFor="let val of allData; index as i">
+						<td>{{val.firstName}}</td>
+						<td>{{val.lastName}}</td>
+						<td>{{val.mobileNo}}</td>
+						<td>{{val.email}}</td>
+						<td><button class="btn btn-danger btn-md ml-2" (click)="getEdit(i)">Edit</button></td>
+						<td><button class="btn btn-danger btn-md ml-2" (click)="getDelete(i)">Delete</button></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<button class="btn btn-primary btn-sm p-2 m-auto float-right" (click)="addUser()">Add User</button>
+		</div>
+	</div>
+</div>

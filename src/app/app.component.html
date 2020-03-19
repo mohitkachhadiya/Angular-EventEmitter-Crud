@@ -1,0 +1,66 @@
+
+<nav class="navbar navbar-expand-md bg-primary navbar-default">
+  <div>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/list">List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/add">Add</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- <app-list></app-list> -->
+<router-outlet></router-outlet>
+
+<!-- <nav class="navbar navbar-expand-md bg-secondary navbar-default">
+  <div>
+    <ul class="navbar-nav m-auto">
+      <li class="nav-item">
+        <a class="nav-link" >List</a>
+      </li>
+    </ul>
+  </div>
+</nav> -->
+<!-- <table border="1">
+  <tr>
+    <th>Student Name</th>
+    <th>Student Surname</th>
+    <th>Student Division</th>
+    <th>Student Roll No</th>
+    <th>Student Grade</th>
+    <th>Students Edit</th>
+    <th>Student Delete</th>
+  </tr>
+  <tbody>
+    <tr *ngFor="let data of students; let i = index">
+      <td>{{data.studentName}}</td>
+      <td>{{data.studentSurname}}</td>
+      <td>{{data.studentDivision}}</td>
+      <td>{{data.studentRollno}}</td>
+      <td>{{data.studentGrade}}</td>
+      <td><button (click) = "editUser(i)">Edit</button></td>
+      <td><button (click) = "onDelete(i)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<button class="btn btn-primary" (click) = "addUser()" >Add User</button>
+
+
+<app-adduser *ngIf="isAdd" [var1]="addData1" (editedData)="editedObject($event)" (data) = "allData($event)"  ></app-adduser> 
+ -->
+<!-- <app-message></app-message>
+<div class="row mt-2">
+  <div class="col-6 offset-3">
+    <div class="card">
+      <div class="-">Your Message</div>
+      <div class="card-body">
+        {{message }}
+      </div>
+    </div>
+  </div>
+</div> -->
+
+

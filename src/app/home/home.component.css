@@ -1,0 +1,36 @@
+
+
+
+.formone {
+	margin-left: 40%;
+	margin-top: 2%;
+}
+.inputtext {
+	width: 35%;
+}
+.submit {
+	width: 100px;
+	margin-left: 23%;
+}
+label, button{
+	margin-top: 15px;
+}
+
+.formtwo div{
+	display: inline-block;
+}
+.inputtextone{
+	margin-left: 20px;
+	display: inline-block;
+	width: 150px;
+}
+
+table th{
+	padding: 10px;
+	border: 1px solid black;
+}
+tr, td{
+	text-align: center;
+	border: 1px solid black;
+	padding: 10px;
+}

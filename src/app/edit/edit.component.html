@@ -1,0 +1,26 @@
+
+<div class="row mt-5">
+	<div class="col-4 offset-4">
+		<h4 class="text-center">Form</h4>
+		<form *ngIf="allData">
+			<div class="form-group m-4">
+				<label>First Name : </label>
+				<input type="text" name="firstName" class="form-control" [(ngModel)]="obj.firstName" placeholder="Enter Your First Name">
+			</div>
+			<div class="form-group m-4">
+				<label>Last Name : </label>
+				<input type="text" name="lastName" class="form-control" [(ngModel)]="obj.lastName" placeholder="Enter Your Last Name">
+			</div>
+			<div class="form-group m-4">
+				<label>Mobile No : </label>
+				<input type="text" name="mobileNo" class="form-control" [(ngModel)]="obj.mobileNo" placeholder="Enter Your Mobile No">
+			</div>
+			<div class="form-group m-4">
+				<label>Email : </label>
+				<input type="text" name="email" class="form-control" [(ngModel)]="obj.email" placeholder="Enter Your E-mail">
+			</div>
+		</form>
+		<button (click)="editMessage()" class="btn btn-primary btn-sm ml-4">Update User</button>
+	</div>
+</div>
+
